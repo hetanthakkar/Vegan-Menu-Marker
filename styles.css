@@ -1,0 +1,102 @@
+/* LeetCode Focus Mode - Styles */
+
+.leetcode-toggle-btn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 10000;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 16px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.leetcode-toggle-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(135deg, #5a67d8 0%, #6b46c1 100%);
+}
+
+.leetcode-toggle-btn:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.toggle-icon {
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.toggle-text {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  white-space: nowrap;
+}
+
+/* Dark mode support for simple result summary */
+@media (prefers-color-scheme: dark) {
+  .simple-result-summary div {
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3) !important;
+  }
+}
+
+/* Hide test case content when extension is active */
+.hidden-by-extension {
+  display: none !important;
+}
+
+/* Smooth transitions for showing/hiding */
+.space-y-4 > div,
+.font-menlo,
+.cm-content {
+  transition: opacity 0.2s ease;
+}
+
+/* Improve visibility of pass/fail status */
+[data-e2e-locator="console-testcase-tag"] {
+  position: relative;
+  z-index: 1;
+}
+
+/* Style for the simple result summary */
+.simple-result-summary {
+  margin: 20px 0;
+  animation: fadeIn 0.4s ease-out;
+  z-index: 10000;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .leetcode-toggle-btn {
+    top: 10px;
+    right: 10px;
+    padding: 8px 12px;
+    font-size: 12px;
+  }
+
+  .toggle-text {
+    display: none;
+  }
+}
