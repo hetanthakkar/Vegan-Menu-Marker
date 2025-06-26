@@ -1,13 +1,13 @@
-# 🌱 Vegan Menu Marker
+# Vegan Menu Marker
 
-A Chrome extension that automatically marks vegan dishes on Google Maps restaurant menus with a 🌱 emoji.
+A Chrome extension that automatically marks vegan dishes on restaurant menus with a 🌱 emoji.
 
 ## Features
 
-- **Automatic Detection**: Scans menu items for non-vegan ingredients (dairy, eggs, meat, fish)
-- **Smart Recognition**: Identifies vegan substitutes like "vegan cheese", "jackfruit", "Beyond Meat"
-- **Toggle Control**: Easy on/off switch in the popup
-- **Conservative Approach**: Only marks items as vegan when confident - no false positives
+- Automatically detects and marks vegan dishes
+- Works on restaurant menu pages
+- Easy toggle to enable/disable
+- Simple and clean interface
 
 ## Installation
 
@@ -15,30 +15,23 @@ A Chrome extension that automatically marks vegan dishes on Google Maps restaura
 2. Open Chrome and go to `chrome://extensions/`
 3. Enable "Developer mode" (top right toggle)
 4. Click "Load unpacked" and select the extension folder
-5. Visit any Google Maps restaurant page to see it in action
+5. Visit any restaurant page to see it in action
 
-## How It Works
+## How it works
 
-The extension analyzes menu item names and descriptions for:
-
-**Non-vegan ingredients detected:**
-- Dairy: cheese, milk, butter, cream, yogurt
-- Eggs: eggs, mayonnaise, aioli
-- Meat: beef, pork, chicken, turkey, lamb
-- Seafood: fish, shrimp, crab, lobster
-- Other: honey, gelatin, whey, casein
-
-**Vegan substitutes recognized:**
-- Plant-based alternatives: vegan cheese, vegan meat, Beyond Meat, Impossible
-- Plant proteins: tofu, tempeh, seitan, jackfruit
-- Plant milks: almond, soy, oat, coconut milk
+1. Navigate to a restaurant page
+2. The extension scans the page for menu items
+3. It checks each item against a database of vegan/non-vegan ingredients
+4. Vegan dishes are marked with a 🌱 emoji
+5. Non-vegan dishes remain unmarked
 
 ## Usage
 
-1. Navigate to a restaurant on Google Maps
-2. Click on the restaurant to view its menu
-3. Vegan dishes will automatically be marked with 🌱
-4. Use the extension popup to toggle marking on/off
+1. Install the extension
+2. Enable the extension using the toggle in the popup
+3. Navigate to any restaurant menu page
+4. The extension will automatically scan and mark vegan dishes
+5. Visit any restaurant page to see it in action
 
 ## Contributing
 
@@ -52,7 +45,7 @@ Contributions welcome! Please help improve ingredient detection:
 
 - No data collection or tracking
 - Works entirely locally in your browser
-- Only activates on Google Maps pages
+- Only activates on restaurant menu pages
 
 ## License
 

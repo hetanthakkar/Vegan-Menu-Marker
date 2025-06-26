@@ -1,4 +1,4 @@
-// Vegan Menu Marker for Google Maps - Content Script (Fixed)
+// Vegan Menu Marker - Content Script (Fixed)
 
 (function() {
   'use strict';
